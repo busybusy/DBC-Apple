@@ -17,12 +17,10 @@ Pod::Spec.new do |s|
 
 	s.requires_arc = true
 	s.ios.deployment_target = '8.0'
-	s.watchos.deployment_target = '2.0'
 	s.osx.deployment_target = '10.10'
 	s.tvos.deployment_target = '9.2'
 	s.ios.frameworks = 'Foundation'
-	s.ios.frameworks = 'XCTest'
+	s.frameworks = 'XCTest'
 	s.dependency 'DBC/Swift'
-	s.dependency 'DBC/Objc'
 	s.source_files = 'DBC-testing/*.{h,m,swift}'
 end
