@@ -7,8 +7,10 @@
 //
 
 
-#ifndef __DBCAMIBEINGDEBUGGED__
-#define __DBCAMIBEINGDEBUGGED__
+#ifndef __DBCINFORM__
+#define __DBCINFORM__
+
+#import "DBCIntensityLevel.h"
 
 /**
  DBCLog is a simple logging mechanism.  It is used by the various debugging/messaging facilities discussed.
@@ -17,7 +19,7 @@
  */
 
 #ifdef DEBUG
-    #define DBCLog(...) NSLog(@"[%d] : %@",  __PRETTY_FUNCTION__, __LINE__, [NSString stringWithFormat:__VA_ARGS__])
+    #define DBCLog(...) NSLog(@"%s[%d] : %@",  __PRETTY_FUNCTION__, __LINE__, [NSString stringWithFormat:__VA_ARGS__])
 #else
     #define DBCLog(...) ((void)0)
 #endif

@@ -13,6 +13,8 @@
 #ifndef __DBC__
 #define __DBC__
 
+#import "DBCIntensityLevel.h"
+
 
 // #define "DEBUG" to get DBC capabilities
 
