@@ -20,7 +20,6 @@ Pod::Spec.new do |s|
 	s.watchos.deployment_target = '2.0'
 	s.osx.deployment_target = '10.10'
 	s.tvos.deployment_target = '9.2'
-	s.default_subspec = 'Bridged'
 
 	s.subspec 'Bridged' do |ss|
 		ss.ios.frameworks = 'Foundation'
