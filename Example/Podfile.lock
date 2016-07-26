@@ -7,7 +7,6 @@ PODS:
   - DBC/Objc (0.1.0)
   - DBC/Swift (0.1.0)
   - DBCTesting (0.1.0):
-    - DBC/Objc
     - DBC/Swift
 
 DEPENDENCIES:
@@ -16,14 +15,14 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   DBC:
-    :path: ../
+    :path: "../"
   DBCTesting:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  DBC: 06f7afd23bcec041930b33c6b146b0113cce036a
-  DBCTesting: a3e6ea5e15d19551a7a0139163425276708352ef
+  DBC: d6a72bc326afb7d804221bc58e692142c488f118
+  DBCTesting: 52b2e9a2d947086beaae671d15105c70559613bb
 
-PODFILE CHECKSUM: 711c1b0fb1903b1b1ef98e497e0e07863f7a3fda
+PODFILE CHECKSUM: 9a766f1fabdf06de7ba7e423ccc1e3fc8c3e7f2f
 
 COCOAPODS: 1.0.1

@@ -122,8 +122,13 @@ public func require(@autoclosure condition:  () -> Bool, @autoclosure _ message:
 ///
 /// - SeeAlso: preconditionFailure()
 /// - SeeAlso: `DBCIntensityLevel.swift`
-public func requireFailure(@autoclosure message: () -> String, file: StaticString = #file, line: UInt = #line) {
-	Assertions.preconditionFailure("failed require : \(message())", file, line)
+public func requireFailure(@autoclosure message: () -> String, intensity:Int = 0, file: StaticString = #file, line: UInt = #line) {
+    if (intensity <= dbcIntensityLevel) {
+        Assertions.preconditionFailure("failed require : \(message())", file, line)
+    }
+    else {
+        inform("failed require(\(intensity)): \(message())", intensity: Int.min, debuggerBreak: dbcBreakOnAssertionsFailures, file: file, line: line)
+    }
 }
 
 
@@ -161,9 +166,14 @@ public func ensure(@autoclosure condition: () -> Bool, @autoclosure _ message: (
 ///
 /// - SeeAlso: assertFailure()
 /// - SeeAlso: `DBCIntensityLevel.swift`
-public func ensureFailure(@autoclosure message: () -> String, file: StaticString = #file, line: UInt = #line) {
+public func ensureFailure(@autoclosure message: () -> String, intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
 #if DEBUG
-	Assertions.assertionFailure("failed ensure : \(message())", file, line)
+    if (intensity <= dbcIntensityLevel) {
+        Assertions.assertionFailure("failed ensure : \(message())", file, line)
+    }
+    else {
+         inform("failed ensure(\(intensity)): \(message())", intensity: Int.min, debuggerBreak: dbcBreakOnAssertionsFailures, file: file, line: line)
+    }
 #endif
 }
 
@@ -199,9 +209,14 @@ public func check(@autoclosure condition: () -> Bool, @autoclosure _ message: ()
 ///
 /// - SeeAlso: assertFailure()
 /// - SeeAlso: `DBCIntensityLevel.swift`
-public func checkFailure(@autoclosure message: () -> String, file: StaticString = #file, line: UInt = #line) {
+public func checkFailure(@autoclosure message: () -> String, intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
 #if DEBUG
-	Assertions.assertionFailure("failed check : \(message())", file, line)
+    if (intensity <= dbcIntensityLevel) {
+        Assertions.assertionFailure("failed check : \(message())", file, line)
+    }
+    else {
+        inform("failed check(\(intensity)) : \(message())", intensity: Int.min, debuggerBreak: dbcBreakOnAssertionsFailures, file: file, line: line)
+    }
 #endif
 }
 
