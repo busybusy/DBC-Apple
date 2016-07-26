@@ -5,9 +5,8 @@ target 'DBC_Example' do
 
   target 'DBC_Tests' do
     inherit! :search_paths
+    pod 'DBC/Bridged', :path => '../'
 	pod 'DBCTesting', :path => '../'
-
-    
   end
 end
 
