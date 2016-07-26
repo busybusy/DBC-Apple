@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 	s.name               = 'DBC'
-	s.version            = '0.1.0'
+	s.version            = '0.2.0'
 	s.summary            = 'A short description of DBC.'
 	s.homepage           = 'https://github.com/busybusy/DBC-Apple'
 	s.license		       = 'Copyright 2016 Busy, LLC. All rights reserved.'
