@@ -178,8 +178,10 @@ class SwiftDBCBridgedTests:  XCTestCase {
 		require(true)
 		check(true)
 		ensure(true)
-		
-		require(false)
+        requireFailure("test dbc off")
+        ensureFailure("test dbc off")
+        checkFailure("test dbc off")
+        require(false)
 		check(false)
 		ensure(false)
 		
