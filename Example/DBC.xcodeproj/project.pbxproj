@@ -17,6 +17,8 @@
 		B89E03371D413E3F00D98FC8 /* DBCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E03351D413E3F00D98FC8 /* DBCTests.swift */; };
 		B8B46FF61D46641B006B1F2A /* DBCBridgedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B46FF21D4663EE006B1F2A /* DBCBridgedTests.m */; };
 		B8B46FF71D46641B006B1F2A /* DBCBridgedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B46FF31D4663EE006B1F2A /* DBCBridgedTests.swift */; };
+		B8F05A3E1D47BB1200B50432 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F05A3D1D47BB1200B50432 /* TestingAppDelegate.swift */; };
+		B8F05A401D47BB3900B50432 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F05A3F1D47BB3900B50432 /* main.swift */; };
 		CE562E256589F91B5514184C /* Pods_DBC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D39AC5C85908ABC8C234E5C /* Pods_DBC_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		B89E03361D413E3F00D98FC8 /* DBCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCTests.m; sourceTree = "<group>"; };
 		B8B46FF21D4663EE006B1F2A /* DBCBridgedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCBridgedTests.m; sourceTree = "<group>"; };
 		B8B46FF31D4663EE006B1F2A /* DBCBridgedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBCBridgedTests.swift; sourceTree = "<group>"; };
+		B8F05A3D1D47BB1200B50432 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		B8F05A3F1D47BB3900B50432 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DB8809831FB0184100FA0A79 /* Pods-DBC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBC_Example/Pods-DBC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E302D125734A38C80E321C5E /* Pods-DBC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBC_Tests/Pods-DBC_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,11 +115,13 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				B8F05A3F1D47BB3900B50432 /* main.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				B8F05A3D1D47BB1200B50432 /* TestingAppDelegate.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
 			);
 			name = "Example for DBC";
 			path = DBC;
@@ -372,7 +378,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8F05A3E1D47BB1200B50432 /* TestingAppDelegate.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				B8F05A401D47BB3900B50432 /* main.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
