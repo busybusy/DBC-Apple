@@ -209,9 +209,14 @@ public func check(@autoclosure condition: () -> Bool, @autoclosure _ message: ()
 ///
 /// - SeeAlso: assertFailure()
 /// - SeeAlso: `DBCIntensityLevel.swift`
-public func checkFailure(@autoclosure message: () -> String, file: StaticString = #file, line: UInt = #line) {
+public func checkFailure(@autoclosure message: () -> String, intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
 #if DEBUG
-	Assertions.assertionFailure("failed check : \(message())", file, line)
+    if (intensity <= dbcIntensityLevel) {
+        Assertions.assertionFailure("failed check : \(message())", file, line)
+    }
+    else {
+        inform("failed check(\(intensity)) : \(message())", intensity: Int.min, debuggerBreak: dbcBreakOnAssertionsFailures, file: file, line: line)
+    }
 #endif
 }
 
