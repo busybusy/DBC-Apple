@@ -18,12 +18,12 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   DBC:
-    :path: ../
+    :path: "../"
   DBCTesting:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  DBC: 13ee6f647bc25c734da683e8251054589401f815
+  DBC: aa34b288e0a80f6be8288b722928e1dc399c8adb
   DBCTesting: 52b2e9a2d947086beaae671d15105c70559613bb
 
 PODFILE CHECKSUM: e49adebe19c0a5f093da08bd2011e1fc4c5e2ffb
