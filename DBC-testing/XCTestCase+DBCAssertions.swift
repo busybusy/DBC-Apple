@@ -22,7 +22,7 @@ import class DBC.Assertions
 private let noReturnFailureWaitTime = 0.1
 
 private protocol DBCTestType {
-	func expect(xcTest: XCTestCase, expectedMessage: String?, file: StaticString, line: UInt, testCase: () -> Void)
+	func expect(_ xcTest: XCTestCase, expectedMessage: String?, file: StaticString, line: UInt, testCase: @escaping () -> Void)
 }
 
 public extension XCTestCase {
@@ -35,7 +35,7 @@ public extension XCTestCase {
 	- parameter line:            The line number that called the method.
 	- parameter testCase:        The test case to be executed that expected to fire the assertion method.
 	*/
-	public func expectRequire(expectedMessage: String? = nil, file: StaticString = #file, line: UInt = #line, testCase: () -> Void) {
+	public func expectRequire(_ expectedMessage: String? = nil, file: StaticString = #file, line: UInt = #line, testCase: @escaping () -> Void) {
 			DBCType.require.expect(self, expectedMessage: expectedMessage, file: file, line: line, testCase: testCase)
 		}
 	
@@ -48,7 +48,7 @@ public extension XCTestCase {
 	- parameter line:            The line number that called the method.
 	- parameter testCase:        The test case to be executed that expected to fire the assertion method.
 	*/
-	public func expectRequireFailure(expectedMessage: String, file: StaticString = #file, line: UInt = #line, testCase: () -> Void) {
+	public func expectRequireFailure(_ expectedMessage: String, file: StaticString = #file, line: UInt = #line, testCase: @escaping () -> Void) {
 		DBCFailureType.requireFailure.expect(self, expectedMessage: expectedMessage, file: file, line: line, testCase: testCase)
 	}
 	
@@ -61,7 +61,7 @@ public extension XCTestCase {
 	- parameter line:            The line number that called the method.
 	- parameter testCase:        The test case to be executed that expected to fire the assertion method.
 	*/
-	public func expectCheck(expectedMessage: String? = nil, file: StaticString = #file, line: UInt = #line, testCase: () -> Void) {
+	public func expectCheck(_ expectedMessage: String? = nil, file: StaticString = #file, line: UInt = #line, testCase: @escaping () -> Void) {
 		DBCType.check.expect(self, expectedMessage: expectedMessage, file: file, line: line, testCase: testCase)
 	}
 	
@@ -74,7 +74,7 @@ public extension XCTestCase {
 	- parameter line:            The line number that called the method.
 	- parameter testCase:        The test case to be executed that expected to fire the assertion method.
 	*/
-	public func expectCheckFailure(expectedMessage: String, file: StaticString = #file, line: UInt = #line, testCase: () -> Void) {
+	public func expectCheckFailure(_ expectedMessage: String, file: StaticString = #file, line: UInt = #line, testCase: @escaping () -> Void) {
 		DBCFailureType.checkFailure.expect(self, expectedMessage: expectedMessage, file: file, line: line, testCase: testCase)
 	}
 	
@@ -87,7 +87,7 @@ public extension XCTestCase {
 	- parameter line:            The line number that called the method.
 	- parameter testCase:        The test case to be executed that expected to fire the assertion method.
 	*/
-	public func expectEnsure(expectedMessage: String? = nil, file: StaticString = #file, line: UInt = #line, testCase: () -> Void) {
+	public func expectEnsure(_ expectedMessage: String? = nil, file: StaticString = #file, line: UInt = #line, testCase: @escaping () -> Void) {
 		DBCType.ensure.expect(self, expectedMessage: expectedMessage, file: file, line: line, testCase: testCase)
 	}
 	
@@ -100,13 +100,13 @@ public extension XCTestCase {
 	- parameter line:            The line number that called the method.
 	- parameter testCase:        The test case to be executed that expected to fire the assertion method.
 	*/
-	public func expectEnsureFailure(expectedMessage: String, file: StaticString = #file, line: UInt = #line, testCase: () -> Void) {
+	public func expectEnsureFailure(_ expectedMessage: String, file: StaticString = #file, line: UInt = #line, testCase: @escaping () -> Void) {
 		DBCFailureType.ensureFailure.expect(self, expectedMessage: expectedMessage, file: file, line: line, testCase: testCase)
 	}
 }
 
 extension  DBCTestType {
-	private func resetAssertionWrapper() {
+	fileprivate func resetAssertionWrapper() {
 		Assertions.precondition = Assertions.swiftPrecondition
 		Assertions.preconditionFailure = Assertions.swiftPreconditionFailure
 		Assertions.assert = Assertions.swiftAssert
@@ -119,15 +119,15 @@ private enum DBCType : String, DBCTestType{
 	case check
 	case ensure
 	
-	func expect(xcTest: XCTestCase, expectedMessage: String?, file: StaticString, line: UInt, testCase: () -> Void) {
+	func expect(_ xcTest: XCTestCase, expectedMessage: String?, file: StaticString, line: UInt, testCase: @escaping () -> Void) {
 		var dbcMessage = self.dbcMessage()
 		
-		if let expectedMessage = expectedMessage where !expectedMessage.isEmpty {
+		if let expectedMessage = expectedMessage , !expectedMessage.isEmpty {
 			dbcMessage += expectedMessage
 		}
 		
 		assertionReturnFunction(xcTest, file: file, line: line, stubFunction: {
-			(caller) -> () in
+			(caller: @escaping (Bool, String) -> Void) -> () in
 			self.updateAssertionWrapper(caller)
 			
 		}, expectedMessage: dbcMessage, testCase: testCase) {
@@ -138,36 +138,36 @@ private enum DBCType : String, DBCTestType{
 	
 	func dbcMessage() -> String {
 		switch self {
-		case require:
+		case .require:
 			return "failed require : "
-		case check:
+		case .check:
 			return "failed check : "
-		case ensure:
+		case .ensure:
 			return "failed ensure : "
 		}
 	}
 	
-	func updateAssertionWrapper(caller: (Bool, String) -> Void) {
+	func updateAssertionWrapper(_ caller: @escaping (Bool, String) -> Void) {
 		switch self {
-		case require:
-			Assertions.precondition = { condition, message, _, _ in
-				caller(condition, message)
+		case .require:
+			Assertions.precondition = { (condition: @autoclosure () -> Bool, message: @autoclosure () -> String, _: StaticString, _: UInt) -> Void in
+				caller(condition(), message())
 			}
-		case check:
-			Assertions.assert = { condition, message, _, _ in
-				caller(condition, message)
+		case .check:
+			Assertions.assert = {  (condition: @autoclosure () -> Bool, message: @autoclosure () -> String, _: StaticString, _: UInt) -> Void in
+				caller(condition(), message())
 			}
-		case ensure:
-			Assertions.assert = { condition, message, _, _ in
-				caller(condition, message)
+		case .ensure:
+			Assertions.assert = {  (condition: @autoclosure () -> Bool, message: @autoclosure () -> String, _: StaticString, _: UInt) -> Void in
+				caller(condition(), message())
 			}
 		}
 	}
 	
-	func assertionReturnFunction(xcTest: XCTestCase, file: StaticString, line: UInt, stubFunction: (caller: (Bool, String) -> Void) -> Void,
-		expectedMessage: String? = nil, testCase: () -> Void, cleanUp: () -> ()) {
+	func assertionReturnFunction(_ xcTest: XCTestCase, file: StaticString, line: UInt, stubFunction: (_ caller: @escaping (Bool, String) -> Void) -> Void,
+		expectedMessage: String? = nil, testCase: @escaping () -> Void, cleanUp: @escaping () -> ()) {
 		
-		let expectation = xcTest.expectationWithDescription(self.rawValue + "-Expectation")
+		let expectation = xcTest.expectation(description: self.rawValue + "-Expectation")
 		var assertion: (condition: Bool, message: String)? = nil
 		
 		stubFunction { (condition, message) -> Void in
@@ -178,7 +178,7 @@ private enum DBCType : String, DBCTestType{
 		// perform on the same thread since it will return
 		testCase()
 		
-		xcTest.waitForExpectationsWithTimeout(noReturnFailureWaitTime) { _ in
+		xcTest.waitForExpectations(timeout: noReturnFailureWaitTime) { _ in
 			
 			defer {
 				// clean up
@@ -205,15 +205,15 @@ private enum DBCFailureType : String, DBCTestType {
 	case checkFailure
 	case ensureFailure
 	
-	func expect(xcTest: XCTestCase, expectedMessage: String?, file: StaticString, line: UInt, testCase: () -> Void) {
+	func expect(_ xcTest: XCTestCase, expectedMessage: String?, file: StaticString, line: UInt, testCase: @escaping () -> Void) {
 		var dbcMessage = self.dbcMessage()
 		
-		if let expectedMessage = expectedMessage where !expectedMessage.isEmpty {
+		if let expectedMessage = expectedMessage , !expectedMessage.isEmpty {
 			dbcMessage += expectedMessage
 		}
 		
 		assertionReturnFunction(xcTest, file: file, line: line, stubFunction: {
-			(caller) -> () in
+			(caller: @escaping (String) -> Void) -> () in
 			self.updateAssertionFailureWrapper(caller)
 			
 		}, expectedMessage: dbcMessage, testCase: testCase) {
@@ -224,35 +224,35 @@ private enum DBCFailureType : String, DBCTestType {
 	
 	func dbcMessage() -> String {
 		switch self {
-		case requireFailure:
+		case .requireFailure:
 			return "failed require : "
-		case checkFailure:
+		case .checkFailure:
 			return "failed check : "
-		case ensureFailure:
+		case .ensureFailure:
 			return "failed ensure : "
 		}
 	}
 	
-	func updateAssertionFailureWrapper(caller: (String) -> Void) {
+	func updateAssertionFailureWrapper(_ caller: @escaping (String) -> Void) {
 		switch self {
-		case requireFailure:
-			Assertions.preconditionFailure = { message, _, _ in
-				caller(message)
+		case .requireFailure:
+			Assertions.preconditionFailure = { (message: @autoclosure () -> String, _: StaticString, _: UInt) -> Void in
+				caller(message())
 			}
-		case checkFailure:
-			Assertions.assertionFailure = { message, _, _ in
-				caller(message)
+		case .checkFailure:
+			Assertions.assertionFailure = { (message: @autoclosure () -> String, _: StaticString, _: UInt) -> Void in
+				caller(message())
 			}
-		case ensureFailure:
-			Assertions.assertionFailure = { message, _, _ in
-				caller(message)
+		case .ensureFailure:
+			Assertions.assertionFailure = { (message: @autoclosure () -> String, _: StaticString, _: UInt) -> Void in
+				caller(message())
 			}
 		}
 	}
 
-	func assertionReturnFunction(xcTest: XCTestCase, file: StaticString, line: UInt, stubFunction: (caller: (String) -> Void) -> Void,
-	                             expectedMessage: String? = nil, testCase: () -> Void, cleanUp: () -> ()) {
-		let expectation = xcTest.expectationWithDescription(self.rawValue + "-Expectation")
+	func assertionReturnFunction(_ xcTest: XCTestCase, file: StaticString, line: UInt, stubFunction: (_ caller: @escaping (String) -> Void) -> Void,
+	                             expectedMessage: String? = nil, testCase: @escaping () -> Void, cleanUp: @escaping () -> ()) {
+		let expectation = xcTest.expectation(description: self.rawValue + "-Expectation")
 		var assertionMessage: String? = nil
 		
 		stubFunction { (message) -> Void in
@@ -261,9 +261,9 @@ private enum DBCFailureType : String, DBCTestType {
 		}
 		
 		// act, perform on separate thead because a call to function runs forever
-		dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), testCase)
+		DispatchQueue.global(qos: DispatchQoS.QoSClass.userInitiated).async(execute: testCase)
 		
-		xcTest.waitForExpectationsWithTimeout(noReturnFailureWaitTime) { _ in
+		xcTest.waitForExpectations(timeout: noReturnFailureWaitTime) { _ in
 			
 			defer {
 				// clean up
