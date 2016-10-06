@@ -12,9 +12,6 @@ import UIKit
 let isRunningTests = NSClassFromString("XCTestCase") != nil
 let appDelegateClass : AnyClass = isRunningTests ? TestingAppDelegate.self : AppDelegate.self
 
-//UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(appDelegateClass))
-
-
 UIApplicationMain(
 	CommandLine.argc,
 	UnsafeMutableRawPointer(CommandLine.unsafeArgv)
