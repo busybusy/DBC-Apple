@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
 		ss.source_files = 'DBC-swift/DBCIntensityBridged.swift'
 		ss.dependency 'DBC/Swift'
 		ss.dependency 'DBC/Objc'
+		ss.xcconfig = { 'SWIFT_VERSION' => '3.0' }
 	end
 
 	s.subspec 'Swift' do |ss|
@@ -34,6 +35,7 @@ Pod::Spec.new do |s|
 		ss.requires_arc = true
 		ss.source_files = 'DBC-swift/*.swift'
 		ss.exclude_files = "DBC-swift/DBCIntensityBridged.swift"
+		ss.xcconfig = { 'SWIFT_VERSION' => '3.0' }
 	end
 
 	s.subspec 'Objc' do |ss|
