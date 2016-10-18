@@ -8,12 +8,12 @@
 
 Pod::Spec.new do |s|
 	s.name               = 'DBCTesting'
-	s.version            = '0.2.0'
+	s.version            = '0.4.0'
 	s.summary            = 'A short description of DBC.'
 	s.homepage           = 'https://github.com/busybusy/DBC-Apple'
 	s.license		       = 'Copyright 2016 Busy, LLC. All rights reserved.'
 	s.author             = { 'Jim Boyd' => 'jim@busybusy.com' }
-	s.source             = { :git => 'https://github.com/busybusy/DBC-Apple.git', :tag => s.version.to_s }
+	s.source             = { :git => 'https://github.com/busybusy/DBC-Apple.git', :tag => s.version.to_s}
 
 	s.requires_arc = true
 	s.ios.deployment_target = '8.0'
