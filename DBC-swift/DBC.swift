@@ -95,7 +95,7 @@ import Foundation
 ///
 /// - SeeAlso: precondition()
 /// - SeeAlso: `DBCIntensityLevel.swift`
-public func require(@autoclosure condition:  () -> Bool, @autoclosure _ message: () -> String = "", intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
+public func require(_ condition:  @autoclosure () -> Bool, _ message: @autoclosure () -> String = "", intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
 	if (intensity <= dbcIntensityLevel) {
 		Assertions.precondition(condition(), "failed require : \(message())", file, line)
 	}
@@ -122,7 +122,7 @@ public func require(@autoclosure condition:  () -> Bool, @autoclosure _ message:
 ///
 /// - SeeAlso: preconditionFailure()
 /// - SeeAlso: `DBCIntensityLevel.swift`
-public func requireFailure(@autoclosure message: () -> String, intensity:Int = 0, file: StaticString = #file, line: UInt = #line) {
+public func requireFailure(_ message: @autoclosure () -> String, intensity:Int = 0, file: StaticString = #file, line: UInt = #line) {
     if (intensity <= dbcIntensityLevel) {
         Assertions.preconditionFailure("failed require : \(message())", file, line)
     }
@@ -145,7 +145,7 @@ public func requireFailure(@autoclosure message: () -> String, intensity:Int = 0
 ///
 /// - SeeAlso: assert()
 /// - SeeAlso: `DBCIntensityLevel.swift`
-public func ensure(@autoclosure condition: () -> Bool, @autoclosure _ message: () -> String = "", intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
+public func ensure(_ condition: @autoclosure () -> Bool, _ message: @autoclosure () -> String = "", intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
 #if DEBUG
 	if (intensity <= dbcIntensityLevel) {
 		Assertions.assert(condition(), "failed ensure : \(message())", file, line)
@@ -166,7 +166,7 @@ public func ensure(@autoclosure condition: () -> Bool, @autoclosure _ message: (
 ///
 /// - SeeAlso: assertFailure()
 /// - SeeAlso: `DBCIntensityLevel.swift`
-public func ensureFailure(@autoclosure message: () -> String, intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
+public func ensureFailure(_ message: @autoclosure () -> String, intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
 #if DEBUG
     if (intensity <= dbcIntensityLevel) {
         Assertions.assertionFailure("failed ensure : \(message())", file, line)
@@ -188,7 +188,7 @@ public func ensureFailure(@autoclosure message: () -> String, intensity: Int = 0
 ///
 /// - SeeAlso: assert()
 /// - SeeAlso: `DBCIntensityLevel.swift`
-public func check(@autoclosure condition: () -> Bool, @autoclosure _ message: () -> String = "", intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
+public func check(_ condition: @autoclosure () -> Bool, _ message: @autoclosure () -> String = "", intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
 #if DEBUG
 	if (intensity <= dbcIntensityLevel) {
 		Assertions.assert(condition(), "failed check : \(message())", file, line)
@@ -209,7 +209,7 @@ public func check(@autoclosure condition: () -> Bool, @autoclosure _ message: ()
 ///
 /// - SeeAlso: assertFailure()
 /// - SeeAlso: `DBCIntensityLevel.swift`
-public func checkFailure(@autoclosure message: () -> String, intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
+public func checkFailure(_ message: @autoclosure () -> String, intensity: Int = 0, file: StaticString = #file, line: UInt = #line) {
 #if DEBUG
     if (intensity <= dbcIntensityLevel) {
         Assertions.assertionFailure("failed check : \(message())", file, line)
@@ -232,17 +232,39 @@ public var dbcBreakOnAssertionsFailures: Bool = false
 // MARK: - Assertions class, custom assertions closures
 /// Stores custom assertions closures, by default it points to Swift assertion functions, but test targets can override them.
 /// - SeeAlso: XCTestCase+DBCAssertions.swift
-public class Assertions {
+open class Assertions {
 	
-	public static var assert              = swiftAssert
-	public static var assertionFailure    = swiftAssertionFailure
-	public static var precondition        = swiftPrecondition
-	public static var preconditionFailure = swiftPreconditionFailure
-	public static var fatalError          = swiftFatalError
+	public typealias assertClosure = (@autoclosure () -> Bool, @autoclosure () -> String, StaticString, UInt) -> Void
+	public typealias assertFailureClosure = (@autoclosure () -> String, StaticString, UInt) -> Void
 	
-	public static let swiftAssert              = { Swift.assert($0, $1, file: $2, line: $3) }
-	public static let swiftAssertionFailure    = { Swift.assertionFailure($0, file: $1, line: $2) }
-	public static let swiftPrecondition        = { Swift.precondition($0, $1, file: $2, line: $3) }
-	public static let swiftPreconditionFailure = { Swift.preconditionFailure($0, file: $1, line: $2) }
-	public static let swiftFatalError          = { Swift.fatalError($0, file: $1, line: $2) }
+	open static var assert: assertClosure = swiftAssert
+	open static var assertionFailure: assertFailureClosure    = swiftAssertionFailure
+	open static var precondition: assertClosure = swiftPrecondition
+	open static var preconditionFailure: assertFailureClosure = swiftPreconditionFailure
+	open static var fatalError: assertFailureClosure = swiftFatalError
+	
+	open static let swiftAssert: assertClosure = {
+		(condition: @autoclosure () -> Bool, message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
+		Swift.assert(condition, message, file: file, line: line)
+	}
+	
+	open static let swiftAssertionFailure: assertFailureClosure = {
+		(message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
+		Swift.assertionFailure(message, file: file, line: line)
+	}
+	
+	open static let swiftPrecondition: assertClosure = {
+		(condition: @autoclosure () -> Bool, message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
+		Swift.precondition(condition, message, file: file, line: line)
+	}
+
+	open static let swiftPreconditionFailure: assertFailureClosure = {
+		(message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
+		Swift.preconditionFailure(message, file: file, line: line)
+	}
+	
+	open static let swiftFatalError: assertFailureClosure = {
+		(message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
+		Swift.fatalError(message, file: file, line: line)
+	}
 }
