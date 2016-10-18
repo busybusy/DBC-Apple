@@ -26,7 +26,7 @@ public var dbcIntensityLevel: Int = 0
 /// Performs `block` closure if `intensity` is set at or below `dbcIntensityLevel`.
 /// - Note: Active during testing/debuging but will not impact performance of shipping code.
 /// - SeeAlso: dbcIntensityLevel
-public func performIfDBCIntensity(intensity: Int, @noescape block: ()->Void)
+public func performIfDBCIntensity(_ intensity: Int, block: ()->Void)
 {
 #if DEBUG
 	if (intensity <= dbcIntensityLevel) {

@@ -27,7 +27,7 @@ import Foundation
 ///
 /// - SeeAlso: `print`, `debugPrint`
 /// - SeeAlso: `DBCIntensityLevel.swift`, `AmIBeingDebugged.swift`
-public func inform(@autoclosure message: () -> String, separator: String = ", ", terminator: String = "\n", intensity: Int = 0, debuggerBreak: Bool = false, file: StaticString = #file, line: UInt = #line) {
+public func inform(_ message: @autoclosure () -> String, separator: String = ", ", terminator: String = "\n", intensity: Int = 0, debuggerBreak: Bool = false, file: StaticString = #file, line: UInt = #line) {
 	#if DEBUG
 		if (intensity <= dbcIntensityLevel) {
 			Swift.debugPrint(message(), file, line, separator: separator, terminator: terminator)
@@ -55,7 +55,7 @@ public func inform(@autoclosure message: () -> String, separator: String = ", ",
 ///
 /// - SeeAlso: `print`, `debugPrint`
 /// - SeeAlso: `DBCIntensityLevel.swift`, `AmIBeingDebugged.swift`
-public func informIf(@autoclosure condition: () -> Bool, @autoclosure _ message: () -> String, separator: String = ", ", terminator: String = "\n", intensity: Int = 0, debuggerBreak: Bool = false, file: StaticString = #file, line: UInt = #line) {
+public func informIf(_ condition: @autoclosure () -> Bool, _ message: @autoclosure () -> String, separator: String = ", ", terminator: String = "\n", intensity: Int = 0, debuggerBreak: Bool = false, file: StaticString = #file, line: UInt = #line) {
 	#if DEBUG
 		if (intensity <= dbcIntensityLevel) && condition() {
 			Swift.debugPrint(message(), file, line, separator: separator, terminator: terminator)
