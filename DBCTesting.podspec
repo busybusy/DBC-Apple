@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
 	s.xcconfig = { 'SWIFT_VERSION' => '2.3' }
 
 	s.frameworks = 'XCTest'
-	s.dependency 'DBC/Swift', ~> '0.4.0'
+	s.dependency 'DBC/Swift', '~> 0.4.0'
 	s.source_files = 'DBC-testing/*.{h,m,swift}'
 end
