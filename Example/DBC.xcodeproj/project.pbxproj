@@ -519,7 +519,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB8809831FB0184100FA0A79 /* Pods-DBC_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DBC/Info.plist;
@@ -537,7 +536,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35A7280BAF0F4A7FF2370282 /* Pods-DBC_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DBC/Info.plist;
@@ -554,7 +552,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 088F6FBBCF9266DF3B86B6AC /* Pods-DBC_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -579,7 +576,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E302D125734A38C80E321C5E /* Pods-DBC_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
