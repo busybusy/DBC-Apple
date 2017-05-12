@@ -13,6 +13,7 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		B834FA311EC52D5A0005D20C /* RequiredOptionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B834FA301EC52D5A0005D20C /* RequiredOptionalTests.swift */; };
 		B84A99A31D42E3C0008DA790 /* DBCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E03361D413E3F00D98FC8 /* DBCTests.m */; };
 		B89E03371D413E3F00D98FC8 /* DBCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E03351D413E3F00D98FC8 /* DBCTests.swift */; };
 		B8B46FF61D46641B006B1F2A /* DBCBridgedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B46FF21D4663EE006B1F2A /* DBCBridgedTests.m */; };
@@ -49,6 +50,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D39AC5C85908ABC8C234E5C /* Pods_DBC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB679C4F8C28E818BD423E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B834FA301EC52D5A0005D20C /* RequiredOptionalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredOptionalTests.swift; sourceTree = "<group>"; };
 		B840234A1D4174E700C4237E /* DBCTesting.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = DBCTesting.podspec; path = ../DBCTesting.podspec; sourceTree = "<group>"; };
 		B89E03341D413E3E00D98FC8 /* DBC_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBC_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		B89E03351D413E3F00D98FC8 /* DBCTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBCTests.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				B89E03361D413E3F00D98FC8 /* DBCTests.m */,
 				B89E03351D413E3F00D98FC8 /* DBCTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				B834FA301EC52D5A0005D20C /* RequiredOptionalTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			files = (
 				B89E03371D413E3F00D98FC8 /* DBCTests.swift in Sources */,
 				B8B46FF71D46641B006B1F2A /* DBCBridgedTests.swift in Sources */,
+				B834FA311EC52D5A0005D20C /* RequiredOptionalTests.swift in Sources */,
 				B84A99A31D42E3C0008DA790 /* DBCTests.m in Sources */,
 				B8B46FF61D46641B006B1F2A /* DBCBridgedTests.m in Sources */,
 			);
