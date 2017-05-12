@@ -30,7 +30,7 @@ void DBC_TYPEDASSERT_NO_RTN(NSString* type, NSString* conditionStr, NSString* me
 //	DBCLogError(@"%@", messageStr);
 //	DEBUGGER_BREAK();
 	
-	[NSException raise:type format:@"%@", messageStr];
+	[NSException raise:NSInternalInconsistencyException format:@"%@", messageStr];
 }
 
 #endif
