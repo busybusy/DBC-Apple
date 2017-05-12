@@ -23,19 +23,22 @@ class RequiredOptionalTests: XCTestCase {
 	func testDBCAll() {
 		let testStr: String? = "Test";
 		_ = testStr.require()
+		_ = testStr.check()
 		
 		// No good way to test this...
 		// let nilStr: String? = nil;
-		// expectRequire() { _ = nilStr.require() }
+		// expectCheck() { _ = nilStr.check() }
 	}
 	
 	func testDBCMessage() {
 		
 		let testStr: String? = "Test";
 		_ = testStr.require("Test Message")
+		_ = testStr.check("Test Message")
 		
 		// No good way to test this...
 		// let nilStr: String? = nil;
 		//expectRequire("Test Message") { _ = nilStr.require("Test Message") }
+		//expectCheck("Test Message") { _ = nilStr.check("Test Message") }
 	}
 }
