@@ -230,7 +230,12 @@ public func checkFailure(_ message: @autoclosure () -> String, intensity: Int = 
 public var dbcBreakOnAssertionsFailures: Bool = false
 
 // MARK: - Assertions class, custom assertions closures
-/// Stores custom assertions closures, by default it points to Swift assertion functions, but test targets can override them.
+/// Stores custom assertions closures, by default each closure envolks Swift assertion functions, but test targets can override them.
+///
+/// Also by default, in addition to envolking Swift assertion functions, each assertion closure throws an NSException which will 
+/// enable crash reporting tools like Crashlytics to pick up all the metadata of the crash. 
+/// See <https://www.swiftbysundell.com/posts/handling-non-optional-optionals-in-swift>
+///
 /// - SeeAlso: XCTestCase+DBCAssertions.swift
 open class Assertions {
 	
@@ -245,26 +250,85 @@ open class Assertions {
 	
 	open static let swiftAssert: assertClosure = {
 		(condition: @autoclosure () -> Bool, message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
+		
+		#if !os(Linux)
+			if !condition() {
+				let exception = NSException(
+					name: .internalInconsistencyException,
+					reason: "\(message()) in \(file), at line \(line)",
+					userInfo: nil
+				)
+				
+				exception.raise()
+			}
+		#endif
+
 		Swift.assert(condition, message, file: file, line: line)
 	}
 	
 	open static let swiftAssertionFailure: assertFailureClosure = {
 		(message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
+		
+		#if !os(Linux)
+			let exception = NSException(
+				name: .internalInconsistencyException,
+				reason: "\(message()) in \(file), at line \(line)",
+				userInfo: nil
+			)
+			
+			exception.raise()
+		#endif
+		
 		Swift.assertionFailure(message, file: file, line: line)
 	}
 	
 	open static let swiftPrecondition: assertClosure = {
 		(condition: @autoclosure () -> Bool, message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
+		
+		#if !os(Linux)
+			if !condition() {
+				let exception = NSException(
+					name: .internalInconsistencyException,
+					reason: "\(message()) in \(file), at line \(line)",
+					userInfo: nil
+				)
+				
+				exception.raise()
+			}
+		#endif
+		
 		Swift.precondition(condition, message, file: file, line: line)
 	}
 
 	open static let swiftPreconditionFailure: assertFailureClosure = {
 		(message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
+		
+		#if !os(Linux)
+			let exception = NSException(
+				name: .internalInconsistencyException,
+				reason: "\(message()) in \(file), at line \(line)",
+				userInfo: nil
+			)
+			
+			exception.raise()
+		#endif
+		
 		Swift.preconditionFailure(message, file: file, line: line)
 	}
 	
 	open static let swiftFatalError: assertFailureClosure = {
 		(message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
+		
+		#if !os(Linux)
+			let exception = NSException(
+				name: .internalInconsistencyException,
+				reason: "\(message()) in \(file), at line \(line)",
+				userInfo: nil
+			)
+			
+			exception.raise()
+		#endif
+		
 		Swift.fatalError(message, file: file, line: line)
 	}
 }
