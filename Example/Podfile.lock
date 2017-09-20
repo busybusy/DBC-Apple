@@ -1,13 +1,13 @@
 PODS:
-  - DBC (1.0.1):
-    - DBC/Bridged (= 1.0.1)
-    - DBC/Objc (= 1.0.1)
-    - DBC/Swift (= 1.0.1)
-  - DBC/Bridged (1.0.1):
+  - DBC (1.0.2):
+    - DBC/Bridged (= 1.0.2)
+    - DBC/Objc (= 1.0.2)
+    - DBC/Swift (= 1.0.2)
+  - DBC/Bridged (1.0.2):
     - DBC/Objc
     - DBC/Swift
-  - DBC/Objc (1.0.1)
-  - DBC/Swift (1.0.1)
+  - DBC/Objc (1.0.2)
+  - DBC/Swift (1.0.2)
   - DBCTesting (1.0.1):
     - DBC/Swift (~> 1.0.0)
 
@@ -18,14 +18,14 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   DBC:
-    :path: "../"
+    :path: ../
   DBCTesting:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  DBC: f04da386b19404af378dfa37aa7d21956b9ec426
+  DBC: b911dec89c90853a5a7287abf0f208cd3bf1895e
   DBCTesting: ac1f8eb98f48e271f2b422377c780a46a15be3fa
 
-PODFILE CHECKSUM: '0639ce55f06bee9621231e25932cecb031e7f2de'
+PODFILE CHECKSUM: 0639ce55f06bee9621231e25932cecb031e7f2de
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.3.1

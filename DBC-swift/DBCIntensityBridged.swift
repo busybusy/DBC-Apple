@@ -15,7 +15,7 @@ import Foundation
 /// - SeeAlso: `DBCIntensityLevel.swift`
 /// - SeeAlso: `DBCIntensityLevel.h`
 @objc public final class DBCBridge : NSObject {
-	static public var intensityLevel: Int = 0 {
+	@objc static public var intensityLevel: Int = 0 {
 		didSet {
 			dbcIntensityLevel = intensityLevel
 			#if DEBUG
