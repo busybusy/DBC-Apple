@@ -1,6 +1,7 @@
 use_frameworks!
 
 target 'DBC_Example' do
+	platform :ios, '9.0'
 	pod 'DBC', :path => '../'
 
   target 'DBC_Tests' do
