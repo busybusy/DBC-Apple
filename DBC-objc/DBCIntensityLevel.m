@@ -28,7 +28,7 @@ void DBC_SetDebugIntensityLevel(NSInteger intensityLevel)
 	sIntensityLevel = intensityLevel;
 }
 
-void DBC_performIfDBCIntensity(NSInteger intensity, void (^ _Nonnull block)())
+void DBC_performIfDBCIntensity(NSInteger intensity, void (^ _Nonnull block)(void))
 {
 	BOOL passesIntensity = (sIntensityLevel >= intensity);
 	

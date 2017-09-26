@@ -29,12 +29,12 @@
 extern "C" {
 #endif
 	
-extern NSInteger DBC_DebugIntensityLevel();
-extern void DBC_SetDebugIntensityLevel(NSInteger intensityLevel);
-
-/// Utility function to perform a provided closure `block` if `DBC_DebugIntensityLevel` is at or greater then the target `intensity` level.
-/// See `DBC_DebugIntensityLevel`.
-extern void DBC_performIfDBCIntensity(NSInteger intensity, void (^ _Nonnull block)());
+	extern NSInteger DBC_DebugIntensityLevel(void);
+	extern void DBC_SetDebugIntensityLevel(NSInteger intensityLevel);
+	
+	/// Utility function to perform a provided closure `block` if `DBC_DebugIntensityLevel` is at or greater then the target `intensity` level.
+	/// See `DBC_DebugIntensityLevel`.
+	extern void DBC_performIfDBCIntensity(NSInteger intensity, void (^ _Nonnull block)(void));
 	
 #ifdef __cplusplus
 }

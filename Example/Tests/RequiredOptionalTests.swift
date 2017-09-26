@@ -25,9 +25,17 @@ class RequiredOptionalTests: XCTestCase {
 		_ = testStr.require()
 		_ = testStr.check()
 		
+		let strings:[String]? = [testStr.require()]
+		let nsstrings:[NSString] = strings.requireCast()
+		print(nsstrings)
+		
 		// No good way to test this...
 		// let nilStr: String? = nil;
 		// expectCheck() { _ = nilStr.check() }
+
+		// let ints:[Int]? = [13,11,12]
+		// let intStrs:[String] = ints.requireCast()
+		// print(intStrs)
 	}
 	
 	func testDBCMessage() {
