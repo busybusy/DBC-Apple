@@ -38,7 +38,7 @@
 		18B9432070720E3775A7F41A /* Pods_DBC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A7280BAF0F4A7FF2370282 /* Pods-DBC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBC_Example/Pods-DBC_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4E2C877BDD51DF5CD439952B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		562FEFA2FD79FE9574ADF071 /* DBC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DBC.podspec; path = ../DBC.podspec; sourceTree = "<group>"; };
+		562FEFA2FD79FE9574ADF071 /* DBC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DBC.podspec; path = ../DBC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* DBC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
