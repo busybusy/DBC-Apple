@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 	s.name               = 'DBC'
-	s.version            = '1.1.1'
+	s.version            = '1.2.0'
 	s.summary            = 'A short description of DBC.'
 	s.homepage           = 'https://github.com/busybusy/DBC-Apple'
 	s.license		       = 'Copyright 2016 Busy, LLC. All rights reserved.'
@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
 	s.source             = { :git => 'git@github.com:busybusy/DBC-Apple.git', :tag => s.version.to_s }
 
 	s.requires_arc = true
-	s.ios.deployment_target = '8.0'
+	s.ios.deployment_target = '9.0'
 	s.watchos.deployment_target = '2.0'
 	s.osx.deployment_target = '10.10'
 	s.tvos.deployment_target = '9.2'
-	s.swift_version = '4.0'
+	s.swift_version = '4.2'
 
 	s.subspec 'Bridged' do |ss|
 		ss.ios.frameworks = 'Foundation'
