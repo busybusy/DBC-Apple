@@ -242,13 +242,13 @@ open class Assertions {
 	public typealias assertClosure = (@autoclosure () -> Bool, @autoclosure () -> String, StaticString, UInt) -> Void
 	public typealias assertFailureClosure = (@autoclosure () -> String, StaticString, UInt) -> Void
 	
-	open static var assert: assertClosure = swiftAssert
-	open static var assertionFailure: assertFailureClosure    = swiftAssertionFailure
-	open static var precondition: assertClosure = swiftPrecondition
-	open static var preconditionFailure: assertFailureClosure = swiftPreconditionFailure
-	open static var fatalError: assertFailureClosure = swiftFatalError
+	public static var assert: assertClosure = swiftAssert
+	public static var assertionFailure: assertFailureClosure    = swiftAssertionFailure
+	public static var precondition: assertClosure = swiftPrecondition
+	public static var preconditionFailure: assertFailureClosure = swiftPreconditionFailure
+	public static var fatalError: assertFailureClosure = swiftFatalError
 	
-	open static let swiftAssert: assertClosure = {
+	public static let swiftAssert: assertClosure = {
 		(condition: @autoclosure () -> Bool, message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
 		
 		#if !os(Linux)
@@ -266,7 +266,7 @@ open class Assertions {
 		Swift.assert(condition, message, file: file, line: line)
 	}
 	
-	open static let swiftAssertionFailure: assertFailureClosure = {
+	public static let swiftAssertionFailure: assertFailureClosure = {
 		(message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
 		
 		#if !os(Linux)
@@ -282,7 +282,7 @@ open class Assertions {
 		Swift.assertionFailure(message, file: file, line: line)
 	}
 	
-	open static let swiftPrecondition: assertClosure = {
+	public static let swiftPrecondition: assertClosure = {
 		(condition: @autoclosure () -> Bool, message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
 		
 		#if !os(Linux)
@@ -300,7 +300,7 @@ open class Assertions {
 		Swift.precondition(condition, message, file: file, line: line)
 	}
 
-	open static let swiftPreconditionFailure: assertFailureClosure = {
+	public static let swiftPreconditionFailure: assertFailureClosure = {
 		(message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
 		
 		#if !os(Linux)
@@ -316,7 +316,7 @@ open class Assertions {
 		Swift.preconditionFailure(message, file: file, line: line)
 	}
 	
-	open static let swiftFatalError: assertFailureClosure = {
+	public static let swiftFatalError: assertFailureClosure = {
 		(message: @autoclosure () -> String, file: StaticString, line: UInt) -> Void in
 		
 		#if !os(Linux)
