@@ -7,20 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F52320C9F0710E3496FA5A4 /* Pods_DBC_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4AC5C2F3E13A4A67DD33F2 /* Pods_DBC_tvOSTests.framework */; };
 		25716EB01A4B2E96C1104697 /* Pods_DBC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B9432070720E3775A7F41A /* Pods_DBC_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		6D7A4C11440CDF29E13B7CB0 /* Pods_DBC_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932728F6276F1D70A424DDEA /* Pods_DBC_tvOS.framework */; };
 		B834FA311EC52D5A0005D20C /* RequiredOptionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B834FA301EC52D5A0005D20C /* RequiredOptionalTests.swift */; };
 		B84A99A31D42E3C0008DA790 /* DBCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E03361D413E3F00D98FC8 /* DBCTests.m */; };
 		B89E03371D413E3F00D98FC8 /* DBCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E03351D413E3F00D98FC8 /* DBCTests.swift */; };
 		B8B46FF61D46641B006B1F2A /* DBCBridgedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B46FF21D4663EE006B1F2A /* DBCBridgedTests.m */; };
 		B8B46FF71D46641B006B1F2A /* DBCBridgedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B46FF31D4663EE006B1F2A /* DBCBridgedTests.swift */; };
+		B8D126B9214AD1E000DA78DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D126B8214AD1E000DA78DE /* AppDelegate.swift */; };
+		B8D126BB214AD1E000DA78DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D126BA214AD1E000DA78DE /* ViewController.swift */; };
+		B8D126BE214AD1E000DA78DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D126BC214AD1E000DA78DE /* Main.storyboard */; };
+		B8D126C0214AD1E200DA78DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D126BF214AD1E200DA78DE /* Assets.xcassets */; };
+		B8D126CB214AD1E300DA78DE /* DBC_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D126CA214AD1E300DA78DE /* DBC_tvOSTests.swift */; };
+		B8D126D3214AD22500DA78DE /* DBCBridgedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B46FF21D4663EE006B1F2A /* DBCBridgedTests.m */; };
+		B8D126D4214AD22500DA78DE /* DBCBridgedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B46FF31D4663EE006B1F2A /* DBCBridgedTests.swift */; };
+		B8D126D5214AD22500DA78DE /* DBCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E03361D413E3F00D98FC8 /* DBCTests.m */; };
+		B8D126D6214AD22500DA78DE /* DBCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E03351D413E3F00D98FC8 /* DBCTests.swift */; };
+		B8D126D7214AD22500DA78DE /* RequiredOptionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B834FA301EC52D5A0005D20C /* RequiredOptionalTests.swift */; };
+		B8D126DF214AD3E500DA78DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D126DE214AD3E500DA78DE /* AppDelegate.swift */; };
+		B8D126E1214AD3E600DA78DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D126E0214AD3E600DA78DE /* Assets.xcassets */; };
+		B8D126E4214AD3E600DA78DE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8D126E2214AD3E600DA78DE /* MainMenu.xib */; };
+		B8D126F0214AD3E600DA78DE /* DBC_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D126EF214AD3E600DA78DE /* DBC_macOSTests.swift */; };
+		B8D126F8214AD3F300DA78DE /* DBCBridgedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B46FF21D4663EE006B1F2A /* DBCBridgedTests.m */; };
+		B8D126F9214AD3F300DA78DE /* DBCBridgedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B46FF31D4663EE006B1F2A /* DBCBridgedTests.swift */; };
+		B8D126FA214AD3F300DA78DE /* DBCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E03361D413E3F00D98FC8 /* DBCTests.m */; };
+		B8D126FB214AD3F300DA78DE /* DBCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E03351D413E3F00D98FC8 /* DBCTests.swift */; };
+		B8D126FC214AD3F300DA78DE /* RequiredOptionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B834FA301EC52D5A0005D20C /* RequiredOptionalTests.swift */; };
 		B8F05A3E1D47BB1200B50432 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F05A3D1D47BB1200B50432 /* TestingAppDelegate.swift */; };
 		B8F05A401D47BB3900B50432 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F05A3F1D47BB3900B50432 /* main.swift */; };
 		CE562E256589F91B5514184C /* Pods_DBC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D39AC5C85908ABC8C234E5C /* Pods_DBC_Tests.framework */; };
+		EBB0A55EBBFA7BDD57826209 /* Pods_DBC_macOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1E48B45C6F9B20BB934224 /* Pods_DBC_macOSTests.framework */; };
+		F53DEC8D632E1CA692F671E7 /* Pods_DBC_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EDF8A71CFA64A4C3985C57 /* Pods_DBC_macOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,14 +54,33 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = DBC;
 		};
+		B8D126C7214AD1E300DA78DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8D126B5214AD1E000DA78DE;
+			remoteInfo = "DBC-tvOS";
+		};
+		B8D126EC214AD3E600DA78DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8D126DB214AD3E500DA78DE;
+			remoteInfo = "DBC-macOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		088F6FBBCF9266DF3B86B6AC /* Pods-DBC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBC_Tests/Pods-DBC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		150CEA90096A6D44F26A6605 /* Pods-DBC-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBC-tvOS/Pods-DBC-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		18B9432070720E3775A7F41A /* Pods_DBC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		311CBA6961EDBF24F21C9A2F /* Pods-DBC-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBC-macOS/Pods-DBC-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		33159ABD1843DF6DF70D95CD /* Pods-DBC-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBC-tvOS/Pods-DBC-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		35A7280BAF0F4A7FF2370282 /* Pods-DBC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBC_Example/Pods-DBC_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3F4AC5C2F3E13A4A67DD33F2 /* Pods_DBC_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBC_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2C877BDD51DF5CD439952B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		562FEFA2FD79FE9574ADF071 /* DBC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DBC.podspec; path = ../DBC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		57C5DA1F9DDCA84BB09298DB /* Pods-DBC-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBC-tvOSTests/Pods-DBC-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DBC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +92,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D39AC5C85908ABC8C234E5C /* Pods_DBC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB679C4F8C28E818BD423E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		932728F6276F1D70A424DDEA /* Pods_DBC_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBC_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A0A3677A6BFD5C0DFB1DE82 /* Pods-DBC-macOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC-macOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBC-macOSTests/Pods-DBC-macOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B834FA301EC52D5A0005D20C /* RequiredOptionalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredOptionalTests.swift; sourceTree = "<group>"; };
 		B840234A1D4174E700C4237E /* DBCTesting.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = DBCTesting.podspec; path = ../DBCTesting.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B89E03341D413E3E00D98FC8 /* DBC_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBC_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -57,10 +101,33 @@
 		B89E03361D413E3F00D98FC8 /* DBCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCTests.m; sourceTree = "<group>"; };
 		B8B46FF21D4663EE006B1F2A /* DBCBridgedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCBridgedTests.m; sourceTree = "<group>"; };
 		B8B46FF31D4663EE006B1F2A /* DBCBridgedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBCBridgedTests.swift; sourceTree = "<group>"; };
+		B8D126B6214AD1E000DA78DE /* DBC-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DBC-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8D126B8214AD1E000DA78DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8D126BA214AD1E000DA78DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8D126BD214AD1E000DA78DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8D126BF214AD1E200DA78DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8D126C1214AD1E300DA78DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8D126C6214AD1E300DA78DE /* DBC-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DBC-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8D126CA214AD1E300DA78DE /* DBC_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBC_tvOSTests.swift; sourceTree = "<group>"; };
+		B8D126CC214AD1E300DA78DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8D126DC214AD3E500DA78DE /* DBC-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DBC-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8D126DE214AD3E500DA78DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8D126E0214AD3E600DA78DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8D126E3214AD3E600DA78DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B8D126E5214AD3E600DA78DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8D126E6214AD3E600DA78DE /* DBC_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DBC_macOS.entitlements; sourceTree = "<group>"; };
+		B8D126EB214AD3E600DA78DE /* DBC-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DBC-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8D126EF214AD3E600DA78DE /* DBC_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBC_macOSTests.swift; sourceTree = "<group>"; };
+		B8D126F1214AD3E600DA78DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8F05A3D1D47BB1200B50432 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		B8F05A3F1D47BB3900B50432 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BF40AB4393F53262D02B4503 /* Pods-DBC-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBC-macOS/Pods-DBC-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C7EDF8A71CFA64A4C3985C57 /* Pods_DBC_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBC_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EB4375D42EEF17061CB7A3 /* Pods-DBC-macOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC-macOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBC-macOSTests/Pods-DBC-macOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5A67B6C4D64AEE2E20237F7 /* Pods-DBC-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBC-tvOSTests/Pods-DBC-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB8809831FB0184100FA0A79 /* Pods-DBC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBC_Example/Pods-DBC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E302D125734A38C80E321C5E /* Pods-DBC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBC_Tests/Pods-DBC_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EC1E48B45C6F9B20BB934224 /* Pods_DBC_macOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBC_macOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +147,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8D126B3214AD1E000DA78DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7A4C11440CDF29E13B7CB0 /* Pods_DBC_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D126C3214AD1E300DA78DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F52320C9F0710E3496FA5A4 /* Pods_DBC_tvOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D126D9214AD3E500DA78DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53DEC8D632E1CA692F671E7 /* Pods_DBC_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D126E8214AD3E600DA78DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB0A55EBBFA7BDD57826209 /* Pods_DBC_macOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +187,10 @@
 			children = (
 				18B9432070720E3775A7F41A /* Pods_DBC_Example.framework */,
 				8D39AC5C85908ABC8C234E5C /* Pods_DBC_Tests.framework */,
+				932728F6276F1D70A424DDEA /* Pods_DBC_tvOS.framework */,
+				3F4AC5C2F3E13A4A67DD33F2 /* Pods_DBC_tvOSTests.framework */,
+				C7EDF8A71CFA64A4C3985C57 /* Pods_DBC_macOS.framework */,
+				EC1E48B45C6F9B20BB934224 /* Pods_DBC_macOSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,11 +199,15 @@
 			isa = PBXGroup;
 			children = (
 				607FACD21AFB9204008FA782 /* Example for DBC */,
+				607FACE81AFB9204008FA782 /* Tests */,
+				B8D126B7214AD1E000DA78DE /* DBC-tvOS */,
+				B8D126C9214AD1E300DA78DE /* DBC-tvOSTests */,
+				B8D126DD214AD3E500DA78DE /* DBC-macOS */,
+				B8D126EE214AD3E600DA78DE /* DBC-macOSTests */,
 				19921FE3EE018E8124D1A1B7 /* Frameworks */,
 				86F038EC90F93C61F8D66B73 /* Pods */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD11AFB9204008FA782 /* Products */,
-				607FACE81AFB9204008FA782 /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +216,10 @@
 			children = (
 				607FACD01AFB9204008FA782 /* DBC_Example.app */,
 				607FACE51AFB9204008FA782 /* DBC_Tests.xctest */,
+				B8D126B6214AD1E000DA78DE /* DBC-tvOS.app */,
+				B8D126C6214AD1E300DA78DE /* DBC-tvOSTests.xctest */,
+				B8D126DC214AD3E500DA78DE /* DBC-macOS.app */,
+				B8D126EB214AD3E600DA78DE /* DBC-macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,8 +288,58 @@
 				35A7280BAF0F4A7FF2370282 /* Pods-DBC_Example.release.xcconfig */,
 				088F6FBBCF9266DF3B86B6AC /* Pods-DBC_Tests.debug.xcconfig */,
 				E302D125734A38C80E321C5E /* Pods-DBC_Tests.release.xcconfig */,
+				150CEA90096A6D44F26A6605 /* Pods-DBC-tvOS.debug.xcconfig */,
+				33159ABD1843DF6DF70D95CD /* Pods-DBC-tvOS.release.xcconfig */,
+				57C5DA1F9DDCA84BB09298DB /* Pods-DBC-tvOSTests.debug.xcconfig */,
+				D5A67B6C4D64AEE2E20237F7 /* Pods-DBC-tvOSTests.release.xcconfig */,
+				BF40AB4393F53262D02B4503 /* Pods-DBC-macOS.debug.xcconfig */,
+				311CBA6961EDBF24F21C9A2F /* Pods-DBC-macOS.release.xcconfig */,
+				9A0A3677A6BFD5C0DFB1DE82 /* Pods-DBC-macOSTests.debug.xcconfig */,
+				D0EB4375D42EEF17061CB7A3 /* Pods-DBC-macOSTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B8D126B7214AD1E000DA78DE /* DBC-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				B8D126B8214AD1E000DA78DE /* AppDelegate.swift */,
+				B8D126BA214AD1E000DA78DE /* ViewController.swift */,
+				B8D126BC214AD1E000DA78DE /* Main.storyboard */,
+				B8D126BF214AD1E200DA78DE /* Assets.xcassets */,
+				B8D126C1214AD1E300DA78DE /* Info.plist */,
+			);
+			path = "DBC-tvOS";
+			sourceTree = "<group>";
+		};
+		B8D126C9214AD1E300DA78DE /* DBC-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8D126CA214AD1E300DA78DE /* DBC_tvOSTests.swift */,
+				B8D126CC214AD1E300DA78DE /* Info.plist */,
+			);
+			path = "DBC-tvOSTests";
+			sourceTree = "<group>";
+		};
+		B8D126DD214AD3E500DA78DE /* DBC-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				B8D126DE214AD3E500DA78DE /* AppDelegate.swift */,
+				B8D126E0214AD3E600DA78DE /* Assets.xcassets */,
+				B8D126E2214AD3E600DA78DE /* MainMenu.xib */,
+				B8D126E5214AD3E600DA78DE /* Info.plist */,
+				B8D126E6214AD3E600DA78DE /* DBC_macOS.entitlements */,
+			);
+			path = "DBC-macOS";
+			sourceTree = "<group>";
+		};
+		B8D126EE214AD3E600DA78DE /* DBC-macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8D126EF214AD3E600DA78DE /* DBC_macOSTests.swift */,
+				B8D126F1214AD3E600DA78DE /* Info.plist */,
+			);
+			path = "DBC-macOSTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,13 +384,91 @@
 			productReference = 607FACE51AFB9204008FA782 /* DBC_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B8D126B5214AD1E000DA78DE /* DBC-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8D126CD214AD1E300DA78DE /* Build configuration list for PBXNativeTarget "DBC-tvOS" */;
+			buildPhases = (
+				7270908F5F4478BB2BE2F93B /* [CP] Check Pods Manifest.lock */,
+				B8D126B2214AD1E000DA78DE /* Sources */,
+				B8D126B3214AD1E000DA78DE /* Frameworks */,
+				B8D126B4214AD1E000DA78DE /* Resources */,
+				86EEF7B15D9D3FAAF9BD1696 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DBC-tvOS";
+			productName = "DBC-tvOS";
+			productReference = B8D126B6214AD1E000DA78DE /* DBC-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8D126C5214AD1E300DA78DE /* DBC-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8D126D0214AD1E300DA78DE /* Build configuration list for PBXNativeTarget "DBC-tvOSTests" */;
+			buildPhases = (
+				90656367F7144C8700EEBF35 /* [CP] Check Pods Manifest.lock */,
+				B8D126C2214AD1E300DA78DE /* Sources */,
+				B8D126C3214AD1E300DA78DE /* Frameworks */,
+				B8D126C4214AD1E300DA78DE /* Resources */,
+				167A3B1408F069261909FD41 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8D126C8214AD1E300DA78DE /* PBXTargetDependency */,
+			);
+			name = "DBC-tvOSTests";
+			productName = "DBC-tvOSTests";
+			productReference = B8D126C6214AD1E300DA78DE /* DBC-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8D126DB214AD3E500DA78DE /* DBC-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8D126F6214AD3E600DA78DE /* Build configuration list for PBXNativeTarget "DBC-macOS" */;
+			buildPhases = (
+				B82951B0C548B58AA567DCB6 /* [CP] Check Pods Manifest.lock */,
+				B8D126D8214AD3E500DA78DE /* Sources */,
+				B8D126D9214AD3E500DA78DE /* Frameworks */,
+				B8D126DA214AD3E500DA78DE /* Resources */,
+				D4DA1203E01934A69CD50DC9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DBC-macOS";
+			productName = "DBC-macOS";
+			productReference = B8D126DC214AD3E500DA78DE /* DBC-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8D126EA214AD3E600DA78DE /* DBC-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8D126F7214AD3E600DA78DE /* Build configuration list for PBXNativeTarget "DBC-macOSTests" */;
+			buildPhases = (
+				B11399822FE1E3D64E746F47 /* [CP] Check Pods Manifest.lock */,
+				B8D126E7214AD3E600DA78DE /* Sources */,
+				B8D126E8214AD3E600DA78DE /* Frameworks */,
+				B8D126E9214AD3E600DA78DE /* Resources */,
+				22542EE7170084F4BF3C97F0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8D126ED214AD3E600DA78DE /* PBXTargetDependency */,
+			);
+			name = "DBC-macOSTests";
+			productName = "DBC-macOSTests";
+			productReference = B8D126EB214AD3E600DA78DE /* DBC-macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -241,6 +480,20 @@
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 1000;
 						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					B8D126B5214AD1E000DA78DE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					B8D126C5214AD1E300DA78DE = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B8D126B5214AD1E000DA78DE;
+					};
+					B8D126DB214AD3E500DA78DE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					B8D126EA214AD3E600DA78DE = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B8D126DB214AD3E500DA78DE;
 					};
 				};
 			};
@@ -259,6 +512,10 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* DBC_Example */,
 				607FACE41AFB9204008FA782 /* DBC_Tests */,
+				B8D126B5214AD1E000DA78DE /* DBC-tvOS */,
+				B8D126C5214AD1E300DA78DE /* DBC-tvOSTests */,
+				B8D126DB214AD3E500DA78DE /* DBC-macOS */,
+				B8D126EA214AD3E600DA78DE /* DBC-macOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,6 +532,38 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D126B4214AD1E000DA78DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D126C0214AD1E200DA78DE /* Assets.xcassets in Resources */,
+				B8D126BE214AD1E000DA78DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D126C4214AD1E300DA78DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D126DA214AD3E500DA78DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D126E1214AD3E600DA78DE /* Assets.xcassets in Resources */,
+				B8D126E4214AD3E600DA78DE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D126E9214AD3E600DA78DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,6 +591,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		167A3B1408F069261909FD41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DBC-tvOSTests/Pods-DBC-tvOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DBC-Bridged-Objc-Swift-tvOS/DBC.framework",
+				"${BUILT_PRODUCTS_DIR}/DBCTesting-tvOS/DBCTesting.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBCTesting.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBC-tvOSTests/Pods-DBC-tvOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22542EE7170084F4BF3C97F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DBC-macOSTests/Pods-DBC-macOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DBC-Bridged-Objc-Swift-macOS/DBC.framework",
+				"${BUILT_PRODUCTS_DIR}/DBCTesting-macOS/DBCTesting.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBCTesting.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBC-macOSTests/Pods-DBC-macOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		43F6900819622C1FC34EC43B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +649,96 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7270908F5F4478BB2BE2F93B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DBC-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86EEF7B15D9D3FAAF9BD1696 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DBC-tvOS/Pods-DBC-tvOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DBC-tvOS/DBC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBC-tvOS/Pods-DBC-tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90656367F7144C8700EEBF35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DBC-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B11399822FE1E3D64E746F47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DBC-macOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B82951B0C548B58AA567DCB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DBC-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BBD43E5173364449B765A015 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,8 +746,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DBC_Tests/Pods-DBC_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DBC-Bridged-Objc-Swift/DBC.framework",
-				"${BUILT_PRODUCTS_DIR}/DBCTesting/DBCTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/DBC-Bridged-Objc-Swift-iOS/DBC.framework",
+				"${BUILT_PRODUCTS_DIR}/DBCTesting-iOS/DBCTesting.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -340,6 +759,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBC_Tests/Pods-DBC_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D4DA1203E01934A69CD50DC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DBC-macOS/Pods-DBC-macOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DBC-macOS/DBC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBC-macOS/Pods-DBC-macOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FC75C4BAE11CF3DC94BEE4B6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,7 +784,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DBC_Example/Pods-DBC_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DBC/DBC.framework",
+				"${BUILT_PRODUCTS_DIR}/DBC-iOS/DBC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -384,6 +821,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8D126B2214AD1E000DA78DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D126BB214AD1E000DA78DE /* ViewController.swift in Sources */,
+				B8D126B9214AD1E000DA78DE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D126C2214AD1E300DA78DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D126D4214AD22500DA78DE /* DBCBridgedTests.swift in Sources */,
+				B8D126D5214AD22500DA78DE /* DBCTests.m in Sources */,
+				B8D126D7214AD22500DA78DE /* RequiredOptionalTests.swift in Sources */,
+				B8D126D6214AD22500DA78DE /* DBCTests.swift in Sources */,
+				B8D126CB214AD1E300DA78DE /* DBC_tvOSTests.swift in Sources */,
+				B8D126D3214AD22500DA78DE /* DBCBridgedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D126D8214AD3E500DA78DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D126DF214AD3E500DA78DE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D126E7214AD3E600DA78DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D126F9214AD3F300DA78DE /* DBCBridgedTests.swift in Sources */,
+				B8D126FA214AD3F300DA78DE /* DBCTests.m in Sources */,
+				B8D126FC214AD3F300DA78DE /* RequiredOptionalTests.swift in Sources */,
+				B8D126FB214AD3F300DA78DE /* DBCTests.swift in Sources */,
+				B8D126F0214AD3E600DA78DE /* DBC_macOSTests.swift in Sources */,
+				B8D126F8214AD3F300DA78DE /* DBCBridgedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -391,6 +871,16 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* DBC_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		B8D126C8214AD1E300DA78DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8D126B5214AD1E000DA78DE /* DBC-tvOS */;
+			targetProxy = B8D126C7214AD1E300DA78DE /* PBXContainerItemProxy */;
+		};
+		B8D126ED214AD3E600DA78DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8D126DB214AD3E500DA78DE /* DBC-macOS */;
+			targetProxy = B8D126EC214AD3E600DA78DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -409,6 +899,22 @@
 				607FACDF1AFB9204008FA782 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		B8D126BC214AD1E000DA78DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8D126BD214AD1E000DA78DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8D126E2214AD3E600DA78DE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8D126E3214AD3E600DA78DE /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -528,10 +1034,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DBC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DCOCOAPODS -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -551,10 +1054,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DBC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DCOCOAPODS -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -579,11 +1079,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) -DCOCOAPODS -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -604,17 +1100,245 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) -DCOCOAPODS -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = 6J53SQMFPY/;
 				SWIFT_OBJC_BRIDGING_HEADER = "Tests/DBC_Tests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		B8D126CE214AD1E300DA78DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150CEA90096A6D44F26A6605 /* Pods-DBC-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6J53SQMFPY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "DBC-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		B8D126CF214AD1E300DA78DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33159ABD1843DF6DF70D95CD /* Pods-DBC-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J53SQMFPY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "DBC-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
+		B8D126D1214AD1E300DA78DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57C5DA1F9DDCA84BB09298DB /* Pods-DBC-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6J53SQMFPY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "DBC-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DBC-tvOS.app/DBC-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		B8D126D2214AD1E300DA78DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5A67B6C4D64AEE2E20237F7 /* Pods-DBC-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J53SQMFPY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "DBC-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DBC-tvOS.app/DBC-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
+		B8D126F2214AD3E600DA78DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF40AB4393F53262D02B4503 /* Pods-DBC-macOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "DBC-macOS/DBC_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6J53SQMFPY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "DBC-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		B8D126F3214AD3E600DA78DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 311CBA6961EDBF24F21C9A2F /* Pods-DBC-macOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "DBC-macOS/DBC_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6J53SQMFPY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "DBC-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		B8D126F4214AD3E600DA78DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A0A3677A6BFD5C0DFB1DE82 /* Pods-DBC-macOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6J53SQMFPY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "DBC-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DBC-macOS.app/Contents/MacOS/DBC-macOS";
+			};
+			name = Debug;
+		};
+		B8D126F5214AD3E600DA78DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0EB4375D42EEF17061CB7A3 /* Pods-DBC-macOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6J53SQMFPY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "DBC-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DBC-macOS.app/Contents/MacOS/DBC-macOS";
 			};
 			name = Release;
 		};
@@ -644,6 +1368,42 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8D126CD214AD1E300DA78DE /* Build configuration list for PBXNativeTarget "DBC-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8D126CE214AD1E300DA78DE /* Debug */,
+				B8D126CF214AD1E300DA78DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8D126D0214AD1E300DA78DE /* Build configuration list for PBXNativeTarget "DBC-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8D126D1214AD1E300DA78DE /* Debug */,
+				B8D126D2214AD1E300DA78DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8D126F6214AD3E600DA78DE /* Build configuration list for PBXNativeTarget "DBC-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8D126F2214AD3E600DA78DE /* Debug */,
+				B8D126F3214AD3E600DA78DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8D126F7214AD3E600DA78DE /* Build configuration list for PBXNativeTarget "DBC-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8D126F4214AD3E600DA78DE /* Debug */,
+				B8D126F5214AD3E600DA78DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

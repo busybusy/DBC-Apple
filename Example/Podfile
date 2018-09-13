@@ -11,6 +11,29 @@ target 'DBC_Example' do
   end
 end
 
+target 'DBC-tvOS' do
+	platform :tvos, '9.2'
+	pod 'DBC', :path => '../'
+	
+	target 'DBC-tvOSTests' do
+		inherit! :search_paths
+		pod 'DBC/Bridged', :path => '../'
+		pod 'DBCTesting', :path => '../'
+	end
+end
+
+target 'DBC-macOS' do
+	platform :osx, '10.10'
+	pod 'DBC', :path => '../'
+	
+	target 'DBC-macOSTests' do
+		inherit! :search_paths
+		pod 'DBC/Bridged', :path => '../'
+		pod 'DBCTesting', :path => '../'
+	end
+end
+
+
 post_install do |installer|
 	installer.pods_project.build_configurations.each do |config|
 		# Configure Pod targets for Xcode 8 compatibility
