@@ -263,7 +263,7 @@ open class Assertions {
 			}
 		#endif
 
-		Swift.assert(condition, message, file: file, line: line)
+		Swift.assert(condition(), message(), file: file, line: line)
 	}
 	
 	public static let swiftAssertionFailure: assertFailureClosure = {
@@ -279,7 +279,7 @@ open class Assertions {
 			exception.raise()
 		#endif
 		
-		Swift.assertionFailure(message, file: file, line: line)
+		Swift.assertionFailure(message(), file: file, line: line)
 	}
 	
 	public static let swiftPrecondition: assertClosure = {
@@ -297,7 +297,7 @@ open class Assertions {
 			}
 		#endif
 		
-		Swift.precondition(condition, message, file: file, line: line)
+		Swift.precondition(condition(), message(), file: file, line: line)
 	}
 
 	public static let swiftPreconditionFailure: assertFailureClosure = {
@@ -313,7 +313,7 @@ open class Assertions {
 			exception.raise()
 		#endif
 		
-		Swift.preconditionFailure(message, file: file, line: line)
+		Swift.preconditionFailure(message(), file: file, line: line)
 	}
 	
 	public static let swiftFatalError: assertFailureClosure = {
@@ -329,6 +329,6 @@ open class Assertions {
 			exception.raise()
 		#endif
 		
-		Swift.fatalError(message, file: file, line: line)
+		Swift.fatalError(message(), file: file, line: line)
 	}
 }

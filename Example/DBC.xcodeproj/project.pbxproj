@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -469,16 +469,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1030;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1030;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 					B8D126B5214AD1E000DA78DE = {
@@ -499,7 +499,7 @@
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "DBC" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -596,19 +596,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DBC-tvOSTests/Pods-DBC-tvOSTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DBC-Bridged-Objc-Swift-tvOS/DBC.framework",
-				"${BUILT_PRODUCTS_DIR}/DBCTesting-tvOS/DBCTesting.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBC-tvOSTests/Pods-DBC-tvOSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBCTesting.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBC-tvOSTests/Pods-DBC-tvOSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBC-tvOSTests/Pods-DBC-tvOSTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DBC-tvOSTests/Pods-DBC-tvOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		22542EE7170084F4BF3C97F0 /* [CP] Embed Pods Frameworks */ = {
@@ -616,19 +613,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DBC-macOSTests/Pods-DBC-macOSTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DBC-Bridged-Objc-Swift-macOS/DBC.framework",
-				"${BUILT_PRODUCTS_DIR}/DBCTesting-macOS/DBCTesting.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBC-macOSTests/Pods-DBC-macOSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBCTesting.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBC-macOSTests/Pods-DBC-macOSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBC-macOSTests/Pods-DBC-macOSTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DBC-macOSTests/Pods-DBC-macOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		43F6900819622C1FC34EC43B /* [CP] Check Pods Manifest.lock */ = {
@@ -672,17 +666,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DBC-tvOS/Pods-DBC-tvOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DBC-tvOS/DBC.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBC-tvOS/Pods-DBC-tvOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBC.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBC-tvOS/Pods-DBC-tvOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBC-tvOS/Pods-DBC-tvOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DBC-tvOS/Pods-DBC-tvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		90656367F7144C8700EEBF35 /* [CP] Check Pods Manifest.lock */ = {
@@ -744,19 +737,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DBC_Tests/Pods-DBC_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DBC-Bridged-Objc-Swift-iOS/DBC.framework",
-				"${BUILT_PRODUCTS_DIR}/DBCTesting-iOS/DBCTesting.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBC_Tests/Pods-DBC_Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBCTesting.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBC_Tests/Pods-DBC_Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBC_Tests/Pods-DBC_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DBC_Tests/Pods-DBC_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D4DA1203E01934A69CD50DC9 /* [CP] Embed Pods Frameworks */ = {
@@ -764,17 +754,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DBC-macOS/Pods-DBC-macOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DBC-macOS/DBC.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBC-macOS/Pods-DBC-macOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBC.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBC-macOS/Pods-DBC-macOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBC-macOS/Pods-DBC-macOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DBC-macOS/Pods-DBC-macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FC75C4BAE11CF3DC94BEE4B6 /* [CP] Embed Pods Frameworks */ = {
@@ -782,17 +771,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DBC_Example/Pods-DBC_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DBC-iOS/DBC.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBC_Example/Pods-DBC_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBC.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBC_Example/Pods-DBC_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBC_Example/Pods-DBC_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DBC_Example/Pods-DBC_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -924,6 +912,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -980,6 +969,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1034,14 +1024,17 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DBC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DCOCOAPODS -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = 6J53SQMFPY/;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1054,13 +1047,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DBC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DCOCOAPODS -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = 6J53SQMFPY/;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -1079,14 +1075,18 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DCOCOAPODS -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = 6J53SQMFPY/;
 				SWIFT_OBJC_BRIDGING_HEADER = "Tests/DBC_Tests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1100,13 +1100,17 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DCOCOAPODS -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = 6J53SQMFPY/;
 				SWIFT_OBJC_BRIDGING_HEADER = "Tests/DBC_Tests-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1127,7 +1131,10 @@
 				DEVELOPMENT_TEAM = 6J53SQMFPY;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "DBC-tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-tvOS";
@@ -1156,7 +1163,10 @@
 				DEVELOPMENT_TEAM = 6J53SQMFPY;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "DBC-tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1183,7 +1193,11 @@
 				DEVELOPMENT_TEAM = 6J53SQMFPY;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "DBC-tvOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-tvOSTests";
@@ -1212,7 +1226,11 @@
 				DEVELOPMENT_TEAM = 6J53SQMFPY;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "DBC-tvOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1243,7 +1261,10 @@
 				DEVELOPMENT_TEAM = 6J53SQMFPY;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "DBC-macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1273,7 +1294,10 @@
 				DEVELOPMENT_TEAM = 6J53SQMFPY;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "DBC-macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-macOS";
@@ -1301,7 +1325,11 @@
 				DEVELOPMENT_TEAM = 6J53SQMFPY;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "DBC-macOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1331,7 +1359,11 @@
 				DEVELOPMENT_TEAM = 6J53SQMFPY;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "DBC-macOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.busybusy.DBC-macOSTests";

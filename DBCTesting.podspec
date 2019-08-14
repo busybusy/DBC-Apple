@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 	s.name               = 'DBCTesting'
-	s.version            = '1.2.0'
+	s.version            = '1.3.0'
 	s.summary            = 'A short description of DBC.'
 	s.homepage           = 'https://github.com/busybusy/DBC-Apple'
 	s.license		       = 'Copyright 2016 Busy, LLC. All rights reserved.'
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 	s.ios.deployment_target = '9.0'
 	s.osx.deployment_target = '10.10'
 	s.tvos.deployment_target = '9.2'
-	s.swift_version = '4.2'
+	s.swift_version = '5.0'
 
 	s.ios.frameworks = 'Foundation'
 	s.frameworks = 'XCTest'
