@@ -9,8 +9,22 @@
 import Foundation
 import XCTest
 import DBC
-import DBCTesting
 
+#if canImport(DBC_objc)
+import DBC_objc
+#endif
+
+#if canImport(DBC_bridged)
+import DBC_bridged
+#endif
+
+#if canImport(DBCTesting)
+import DBCTesting
+#endif
+
+#if canImport(DBC_testing)
+import DBC_testing
+#endif
 
 class SwiftDBCBridgedTests:  XCTestCase {
 	override func setUp() {

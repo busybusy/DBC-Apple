@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 	s.name               = 'DBC'
-	s.version            = '1.3.0'
+	s.version            = '1.4.0'
 	s.summary            = 'A short description of DBC.'
 	s.homepage           = 'https://github.com/busybusy/DBC-Apple'
 	s.license		       = 'Copyright 2016 Busy, LLC. All rights reserved.'
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 	s.subspec 'Bridged' do |ss|
 		ss.ios.frameworks = 'Foundation'
 		ss.requires_arc = true
-		ss.source_files = 'DBC-swift/DBCIntensityBridged.swift'
+		ss.source_files = 'DBC-bridged/DBCIntensityBridged.swift'
 		ss.dependency 'DBC/Swift'
 		ss.dependency 'DBC/Objc'
 	end
@@ -34,7 +34,6 @@ Pod::Spec.new do |s|
 		ss.ios.frameworks = 'Foundation'
 		ss.requires_arc = true
 		ss.source_files = 'DBC-swift/*.swift'
-		ss.exclude_files = "DBC-swift/DBCIntensityBridged.swift"
 	end
 
 	s.subspec 'Objc' do |ss|

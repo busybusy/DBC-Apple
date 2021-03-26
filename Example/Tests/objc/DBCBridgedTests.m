@@ -8,8 +8,11 @@
 
 #import <XCTest/XCTest.h>
 #import "DBCIntensityLevel.h"
-@import  DBC;
+@import DBC;
 
+#ifdef PACKAGE_MANAGER
+@import DBC_bridged;
+#endif
 
 @interface DBCBridgedTests : XCTestCase
 

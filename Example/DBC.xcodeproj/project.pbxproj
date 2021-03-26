@@ -79,7 +79,7 @@
 		35A7280BAF0F4A7FF2370282 /* Pods-DBC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBC_Example/Pods-DBC_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3F4AC5C2F3E13A4A67DD33F2 /* Pods_DBC_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBC_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2C877BDD51DF5CD439952B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		562FEFA2FD79FE9574ADF071 /* DBC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DBC.podspec; path = ../DBC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		562FEFA2FD79FE9574ADF071 /* DBC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DBC.podspec; path = ../DBC.podspec; sourceTree = "<group>"; };
 		57C5DA1F9DDCA84BB09298DB /* Pods-DBC-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBC-tvOSTests/Pods-DBC-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DBC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,13 +94,13 @@
 		8FB679C4F8C28E818BD423E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		932728F6276F1D70A424DDEA /* Pods_DBC_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBC_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0A3677A6BFD5C0DFB1DE82 /* Pods-DBC-macOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBC-macOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBC-macOSTests/Pods-DBC-macOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B834FA301EC52D5A0005D20C /* RequiredOptionalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredOptionalTests.swift; sourceTree = "<group>"; };
-		B840234A1D4174E700C4237E /* DBCTesting.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = DBCTesting.podspec; path = ../DBCTesting.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B834FA301EC52D5A0005D20C /* RequiredOptionalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequiredOptionalTests.swift; path = swift/RequiredOptionalTests.swift; sourceTree = "<group>"; };
+		B840234A1D4174E700C4237E /* DBCTesting.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = DBCTesting.podspec; path = ../DBCTesting.podspec; sourceTree = "<group>"; };
 		B89E03341D413E3E00D98FC8 /* DBC_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBC_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
-		B89E03351D413E3F00D98FC8 /* DBCTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBCTests.swift; sourceTree = "<group>"; };
-		B89E03361D413E3F00D98FC8 /* DBCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCTests.m; sourceTree = "<group>"; };
-		B8B46FF21D4663EE006B1F2A /* DBCBridgedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCBridgedTests.m; sourceTree = "<group>"; };
-		B8B46FF31D4663EE006B1F2A /* DBCBridgedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBCBridgedTests.swift; sourceTree = "<group>"; };
+		B89E03351D413E3F00D98FC8 /* DBCTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBCTests.swift; path = swift/DBCTests.swift; sourceTree = "<group>"; };
+		B89E03361D413E3F00D98FC8 /* DBCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBCTests.m; path = objc/DBCTests.m; sourceTree = "<group>"; };
+		B8B46FF21D4663EE006B1F2A /* DBCBridgedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBCBridgedTests.m; path = objc/DBCBridgedTests.m; sourceTree = "<group>"; };
+		B8B46FF31D4663EE006B1F2A /* DBCBridgedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBCBridgedTests.swift; path = swift/DBCBridgedTests.swift; sourceTree = "<group>"; };
 		B8D126B6214AD1E000DA78DE /* DBC-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DBC-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D126B8214AD1E000DA78DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8D126BA214AD1E000DA78DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };

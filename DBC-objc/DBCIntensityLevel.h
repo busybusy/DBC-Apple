@@ -25,6 +25,8 @@
 
 #ifdef DEBUG
 
+@import Foundation;
+
 #ifdef __cplusplus
 extern "C" {
 #endif

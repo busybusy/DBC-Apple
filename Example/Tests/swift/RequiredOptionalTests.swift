@@ -8,7 +8,14 @@
 
 import XCTest
 import DBC
+
+#if canImport(DBCTesting)
 import DBCTesting
+#endif
+
+#if canImport(DBC_testing)
+import DBC_testing
+#endif
 
 class RequiredOptionalTests: XCTestCase {
 	override func setUp() {
