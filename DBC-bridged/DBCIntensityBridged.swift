@@ -8,7 +8,15 @@
 
 import Foundation
 
-/// If using DBC in a project with both swift and objc-c source, and needing to set intensity levels in boh sources,
+#if canImport(DBC)
+import DBC
+#endif
+
+#if canImport(DBC_objc)
+import DBC_objc
+#endif
+
+/// If using DBC in a project with both swift and objc-c source, and needing to set intensity levels in both sources,
 /// use `DBCBridge.intensityLevel` to set and keep in sync both the swift `dbcIntensityLevel` and obj-c
 /// `DBC_DebugIntensityLevel` values.
 ///

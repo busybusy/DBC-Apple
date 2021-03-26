@@ -14,7 +14,7 @@
 #include <sys/sysctl.h>
 
 #ifdef DEBUG
-bool DBC_AmIBeingDebbugged(void)
+BOOL DBC_AmIBeingDebbugged(void)
 {
 	int                 junk;
 	int                 mib[4];
